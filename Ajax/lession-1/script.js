@@ -4,7 +4,7 @@ function loadContent() {
 
     // What to do when response arrives
     xhr.onload = function() {
-        const container = document.getElementById('lession1');
+        const container = document.getElementById("lession1");
         lession1.innerHTML = xhr.responseText;
     }
 
