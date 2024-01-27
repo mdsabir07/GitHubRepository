@@ -1,11 +1,10 @@
-function loadContent() {
+function loadContent(callbackF) {
     // Create a new XMLHttpRequest
     const xhr = new XMLHttpRequest();
 
     // What to do when response arrives / Define a callback function
     xhr.onload = function() {
-        const container = document.getElementById("lession1");
-        container.innerHTML = this.responseText;
+        callbackF(this);
     }
 
     // prepare request methods: GET, POST, PUT, PATCH, DELETE, OPTIONS / Open the XMLHttpRequest object
@@ -19,4 +18,14 @@ function loadContent() {
 
     // abort
     // xhr.abort();
+}
+
+function myCallback1(xhr) {
+    const container = document.getElementById("lession1");
+    container.innerHTML = xhr.responseText;
+}
+
+function myCallback2(xhr) {
+    const container = document.getElementById("lession2");
+    container.innerHTML = xhr.responseText;
 }

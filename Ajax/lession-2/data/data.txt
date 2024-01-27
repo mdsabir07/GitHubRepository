@@ -1,0 +1,5 @@
+<h1>Heading from data folder</h1>
+</html>
+<div>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, minima voluptatem! Non ullam earum qui sit voluptatum harum assumenda deleniti quaerat atque? Fugiat, vitae quaerat enim minus cumque omnis earum?
+</div>
